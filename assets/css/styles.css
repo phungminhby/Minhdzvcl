@@ -74,3 +74,13 @@ footer p{
     justify-content: space-between;
     align-items: center;
 }
+.myInfor ul li{
+    list-style: none;
+}
+li{
+    line-height: 3.0;
+    font-size: 20px;
+}
+#rinFor ul{
+    list-style-type: circle;
+}
