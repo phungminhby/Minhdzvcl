@@ -31,6 +31,7 @@ p{
 header{
     background-color: #4c7a47;
     text-align: right ;
+    padding: 10px;
 }
 #name{
     color: red;
@@ -81,6 +82,13 @@ li{
     line-height: 3.0;
     font-size: 20px;
 }
-#rinFor ul{
+.favorite li{
     list-style-type: circle;
+}
+.myInfor{
+    background-color: #7c7a7a;
+}
+.myInfor li i{
+    color: #6bd760;
+    margin-right: 10px;
 }
