@@ -12,7 +12,9 @@ body{
   
 }
 #mainContent{
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap; /* để cột tự xuống hàng */
 }
 h2{
     color: #6bd760;
@@ -108,4 +110,21 @@ li{
     bottom: 0;
     right: 0;
     padding: 10px;
+}
+@media (max-width: 768px) {
+  #lInfor, #rInfor {
+    width: 100%;       /* mỗi cột chiếm full màn hình */
+    padding: 10px;
+  }
+  .myInfor ul li{
+    font-size: 16px;
+}
+
+  #rInfor {
+    margin-top: 20px;  /* tạo khoảng cách với lInfor */
+  }
+
+  h2 {
+    font-size: 22px;   /* chữ nhỏ lại cho vừa màn hình */
+  }
 }
