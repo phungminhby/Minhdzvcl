@@ -40,8 +40,9 @@ header{
     text-align: right ;
     padding: 10px;
 }
-#name{
+#name a{
     color: red;
+    text-decoration: none;
 }
 header p {
     color: #222;
@@ -63,6 +64,7 @@ main{
     width: 400px;
     background-color: #474747;
     padding: 10px;
+    position: relative;
 }
 #avt{
     
@@ -94,8 +96,16 @@ li{
 }
 .myInfor{
     background-color: #7c7a7a;
+    
 }
 .myInfor li i{
     color: #6bd760;
     margin-right: 10px;
+}
+#copyright{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
 }
