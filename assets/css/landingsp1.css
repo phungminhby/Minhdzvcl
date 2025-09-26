@@ -1,164 +1,114 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  color: #222;
-  line-height: 1.6;
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
 }
-
-/* Container */
-.contenter {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.contenter{
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
 }
-
-/* Header */
-header {
+header{
+    display: flex;
+}
+.logo{
+    flex-basis: 30%;
+    justify-content: center
+}
+.logo img{
+    width: 100px;
+}
+.menu{
+    flex-basis: 40%;
+    display: inline;
+    
+}
+a{
+        text-decoration: none;
+        font-size: 30px;
+        margin: 20px;
+        color: rgb(255, 255, 255);
+}
+.sign-up{
+    flex-basis: 30%;
+}
+button{
+    background-color: green;
+    border-radius: 3px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+button:hover {
+  background: #8ebd8a;   /* đổi màu khi hover */
+}
+.productpic{
+    display: flex;
+    justify-content: center;
+}
+.spectrum{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+  flex-direction: row;  /* xếp theo cột */
+  align-items: center;     /* căn giữa theo chiều ngang */
+  justify-content: center; /* căn giữa theo chiều dọc nếu có chiều cao */
+  text-align: center;      /* chữ cũng căn giữa */
+  gap: 50px;
+  
 }
 
-header img {
-  width: 120px;
+.spectrum p{
+    background-color: rgb(180, 233, 215);
+    padding: 20px;
+    border-radius: 5px;
+}
+.quote{
+    display: flex;
+    flex-direction: row;  /* xếp theo cột */
+    align-items: center;     /* căn giữa theo chiều ngang */
+    justify-content: center;
+    margin-top: 10px;
+}
+.quote div{
+    width: 50%;
+    padding-left: 20px;
+}
+.quote img{
+    border-radius: 10px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;  /* xếp theo cột */
+    align-items: center;     /* căn giữa theo chiều ngang */
+    justify-content: center;
+    margin-top: 10px;
+}
+.llink{
+    width: 50%;
+    text-align: left;
+}
+.rlink{
+    width: 50%;
+    text-align: right;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
 
-nav p {
-  cursor: pointer;
-  font-weight: bold;
-}
 
-header button {
-  padding: 10px 20px;
-  border: none;
-  background: #6bd760;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-}
 
-/* Hero/Product Section */
-.productpic {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin: 40px 0;
-}
 
-.product-infor {
-  flex: 1;
-}
 
-.product-infor h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 
-.product-infor p {
-  margin-bottom: 20px;
-}
 
-.product-infor button {
-  padding: 12px 24px;
-  background: #4c7a47;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-}
 
-.product-img img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
-}
 
-/* Features (spectrum) */
-.spectrum {
-  display: flex;
-  justify-content: space-around;
-  background: #4c7a47;
-  padding: 20px;
-  border-radius: 8px;
-  color: white;
-  margin: 40px 0;
-}
 
-.spectrum p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Quote/Review */
-.quote {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
-}
-
-.quote img {
-  width: 100px;
-  border-radius: 50%;
-}
-
-.customer-think p:last-child {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.footer a {
-  margin-right: 15px;
-  color: #4c7a47;
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-  color: #555;
-  font-size: 14px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .productpic {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .spectrum {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .quote {
-    flex-direction: column;
-    text-align: center;
-  }
+.quote img{
+    width: 200px;
 }
