@@ -75,3 +75,31 @@ nav a{
 .info{
     width: 60%;
 }
+
+@media (max-width: 768px) {
+  .infor {
+    flex-direction: column;   /* thêm dòng này */
+    align-items: center;      /* căn giữa cho đẹp */
+  }
+    .job, .avt {
+    width: 100%;              /* cả 2 cột chiếm full chiều rộng */
+    text-align: center;       /* căn chữ ra giữa */
+  }
+  .linfor {
+    flex-direction: column;   /* thêm dòng này */
+    align-items: center;
+  }
+
+  .tieude, .info {
+    width: 100%;
+    text-align: center;
+  }
+nav{
+    width: 50%;
+    text-align: right;
+    font-size: 20px;
+    
+}
+  
+    
+}
