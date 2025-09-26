@@ -1,0 +1,164 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.contenter {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header img {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav p {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button {
+  padding: 10px 20px;
+  border: none;
+  background: #6bd760;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero/Product Section */
+.productpic {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.product-infor {
+  flex: 1;
+}
+
+.product-infor h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-infor p {
+  margin-bottom: 20px;
+}
+
+.product-infor button {
+  padding: 12px 24px;
+  background: #4c7a47;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.product-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+/* Features (spectrum) */
+.spectrum {
+  display: flex;
+  justify-content: space-around;
+  background: #4c7a47;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  margin: 40px 0;
+}
+
+.spectrum p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Quote/Review */
+.quote {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.quote img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.customer-think p:last-child {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer a {
+  margin-right: 15px;
+  color: #4c7a47;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productpic {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .spectrum {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .quote {
+    flex-direction: column;
+    text-align: center;
+  }
+}
