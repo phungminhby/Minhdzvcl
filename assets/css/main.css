@@ -76,17 +76,20 @@ nav a{
     width: 60%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .infor {
-    flex-direction: column;   /* thêm dòng này */
-    align-items: center;      /* căn giữa cho đẹp */
+    flex-direction: column;
+    align-items: center;
   }
-    .job, .avt {
-    width: 100%;              /* cả 2 cột chiếm full chiều rộng */
-    text-align: center;       /* căn chữ ra giữa */
+
+  .job, .avt {
+    width: 100%;
+    text-align: center;
+    font-size: 18px; /* chữ nhỏ gọn cho mobile */
   }
+
   .linfor {
-    flex-direction: column;   /* thêm dòng này */
+    flex-direction: column;
     align-items: center;
   }
 
@@ -94,12 +97,18 @@ nav a{
     width: 100%;
     text-align: center;
   }
-nav{
-    width: 50%;
-    text-align: right;
-    font-size: 20px;
-    
-}
-  
-    
+
+  nav {
+    font-size: 20px; /* menu nhỏ lại */
+    text-align: center; /* căn giữa menu trên mobile */
+  }
+
+  #header img {
+    width: 100px; /* logo nhỏ lại */
+  }
+
+  .avt i {
+    margin: 15px 5px 0 5px; 
+    font-size: 22px; /* icon gọn hơn */
+  }
 }
