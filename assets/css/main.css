@@ -4,30 +4,47 @@
 
 body{
 
-    flex-wrap: wrap; /* để cột tự xuống hàng */
+    /* flex-wrap: wrap;  */
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     
 
 }
+main{
+    background-color: rgb(138, 138, 138);
+    padding: 30px;
+    margin-top: 30px;
+}
 .contenter{
     max-width: 1200px;
     width: 100%;
+    padding: 30px;
+    background-color: rgb(196, 206, 202);
 }
 #header img{
     width: 50px;
 }
+.infor{
+    display: flex;
+}
 .job{
-    width: 50%;
+    width: 70%;
+    color: aliceblue;
+    font-size: 30px;
 }
 .avt{
-    width: 50%;
-    text-align: right;
+    width: 30%;
+    /* text-align: right; */
 }
 .avt img{
-    width: 400px;
+    width: 100%;
     border-radius: 20px;
+}
+.avt i{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 30px;
 }
 #header{
     display: flex;
@@ -36,7 +53,7 @@ body{
     width: 50%;
 }
 #header img{
-    width: 200px;
+    width: 200px   ;
 }
 nav{
     width: 50%;
@@ -47,12 +64,14 @@ nav{
 nav a{
     text-decoration: none;
 }
-.infor{
-    display: flex;
-}
+
 .linfor{
     display: flex;
 }
+
 .tieude{
-    width: 50%;
+    width: 40%;
+}
+.info{
+    width: 60%;
 }
