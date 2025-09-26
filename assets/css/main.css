@@ -3,9 +3,56 @@
 }
 
 body{
-    margin:20px;
-    background:#f7f7f7;
-    color:#222;
+
+    flex-wrap: wrap; /* để cột tự xuống hàng */
     font-family: Arial, Helvetica, sans-serif;
-    width: 1200px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.contenter{
+    max-width: 1200px;
+    width: 100%;
+}
+#header img{
+    width: 50px;
+}
+.job{
+    width: 50%;
+}
+.avt{
+    width: 50%;
+    text-align: right;
+}
+.avt img{
+    width: 400px;
+    border-radius: 20px;
+}
+#header{
+    display: flex;
+}
+#header a{
+    width: 50%;
+}
+#header img{
+    width: 200px;
+}
+nav{
+    width: 50%;
+    text-align: right;
+    font-size: 50px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+.infor{
+    display: flex;
+}
+.linfor{
+    display: flex;
+}
+.tieude{
+    width: 50%;
 }

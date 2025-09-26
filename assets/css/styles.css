@@ -53,7 +53,7 @@ header p {
 }
 main{
     display: flex;
-    margin-top: -16px;
+    /* margin-top: -16px; */
 }
 
 #lInfor{
@@ -113,16 +113,12 @@ li{
 }
 @media (max-width: 768px) {
   #lInfor, #rInfor {
-    width: 100%;       /* mỗi cột chiếm full màn hình */
+    width: 100%;       mỗi cột chiếm full màn hình
     padding: 10px;
   }
   .myInfor ul li{
     font-size: 16px;
 }
-
-  #rInfor {
-    margin-top: 20px;  /* tạo khoảng cách với lInfor */
-  }
 
   h2 {
     font-size: 22px;   /* chữ nhỏ lại cho vừa màn hình */
