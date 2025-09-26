@@ -57,21 +57,22 @@ main{
 }
 
 #lInfor{
-    width: 800px;
+    width: 60%;
     background-color: #7c7a7a;
     padding: 10px;
 }
 #rInfor{
     color: aliceblue;
-    width: 400px;
+    width: 40%;
     background-color: #474747;
     padding: 10px;
     position: relative;
 }
 #avt{
     
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
+    width: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -113,7 +114,7 @@ li{
 }
 @media (max-width: 768px) {
   #lInfor, #rInfor {
-    width: 100%;       mỗi cột chiếm full màn hình
+    width: 100%;      
     padding: 10px;
   }
   .myInfor ul li{
@@ -123,4 +124,5 @@ li{
   h2 {
     font-size: 22px;   /* chữ nhỏ lại cho vừa màn hình */
   }
+
 }
