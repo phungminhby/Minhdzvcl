@@ -82,6 +82,7 @@ button:hover {
 }
 .quote img{
     border-radius: 10px;
+    width: 150px;
 }
 .footer{
     display: flex;
@@ -98,17 +99,68 @@ button:hover {
     width: 50%;
     text-align: right;
 }
+@media (max-width: 480px) {
+  body {
+    padding: 5px; /* đỡ bị dính mép quá */
+  }
 
+  header {
+    flex-direction: column; /* logo, menu, sign-up xếp dọc */
+    align-items: center;
+  }
 
+  .logo, .menu, .sign-up {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
+  a {
+    font-size: 20px;   /* chữ nhỏ lại */
+    margin: 10px;
+    display: inline-block;
+  }
 
+  button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 
+  .spectrum {
+    flex-direction: column;  /* icon + chữ xếp dọc */
+    align-items: flex-start; /* căn trái */
+    gap: 15px;
+  }
 
+  .spectrum p {
+    width: 100%; /* chiếm full chiều ngang */
+    text-align: left;
+  }
 
+  .quote {
+    flex-direction: column; /* hình & text xếp dọc */
+    text-align: center;
+  }
 
+  .quote div {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
 
+  .quote img {
+    width: 100%; /* ảnh full chiều ngang */
+    max-width: 300px;
+  }
 
+  .footer {
+    flex-direction: column; /* link xếp dọc */
+    text-align: center;
+  }
 
-.quote img{
-    width: 200px;
+  .llink, .rlink {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
 }
