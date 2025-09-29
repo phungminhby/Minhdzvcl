@@ -15,12 +15,14 @@ main{
     background-color: rgb(138, 138, 138);
     padding: 30px;
     margin-top: 30px;
+    
 }
 .contenter{
     max-width: 1200px;
     width: 100%;
     padding: 30px;
     background-color: rgb(196, 206, 202);
+
 }
 #header img{
     width: 100px;
@@ -74,6 +76,17 @@ nav a{
     width: 60%;
 }
 
+.calculator{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.calculator a{
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 480px) {
   .infor {
     flex-direction: column;
@@ -109,4 +122,5 @@ nav a{
     margin: 15px 5px 0 5px; 
     font-size: 22px; /* icon gọn hơn */
   }
+
 }

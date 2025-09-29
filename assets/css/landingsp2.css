@@ -11,6 +11,9 @@ body {
   color: #222;
   line-height: 1.6;
 }
+a{
+  text-decoration: none;
+}
 
 /* Container */
 .contenter {
@@ -36,7 +39,7 @@ nav {
   gap: 20px;
 }
 
-nav p {
+nav a  {
   cursor: pointer;
   font-weight: bold;
 }
@@ -145,7 +148,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .productpic {
     flex-direction: column;
     text-align: center;
