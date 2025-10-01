@@ -9,6 +9,6 @@ let current = '';
 
 //cập nhật hiện thị nếu rỗng hiện thị 0
 
-function updateDisplay{
-    display.value = current === '' ? '0' : current;
-}
+// function updateDisplay {
+//     display.value = current === '' ? '0' : current;
+// }
