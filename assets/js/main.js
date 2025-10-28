@@ -1,14 +1,45 @@
 console.log("Hello from main.js");
-// lây ô hiển thị
-const display = document.getElementById("display"); //tạo biến display lấy giữ liệu từ id display
-const buttons = document.querySelectorAll('.button button'); //tạo biến buttons quét toàn bộ giữ liệu từ nút button trong class .button
 
-//lưu biến hiện tại dưới dạng chuỗi
+// Lấy ô hiển thị
+const display = document.getElementById("display");
+const buttons = document.querySelectorAll(".btn, .equal, .zero");
+let currentValue = "";
 
-let current = '';
+// Lặp qua từng nút
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const value = btn.innerText;
+    console.log(value);
 
-//cập nhật hiện thị nếu rỗng hiện thị 0
+    switch (value) {
+      case "AC":
+        currentValue = "0";
+        display.value = "";
+        break;
 
-// function updateDisplay {
-//     display.value = current === '' ? '0' : current;
-// }
+      case "C":
+        currentValue = currentValue.slice(0, -1) || "";
+        display.value = currentValue;
+        break;
+
+      case "=":
+        try {
+          // Không hiển thị dấu "=" — chỉ hiện kết quả
+          const result = eval(currentValue.replace(/X/g, "*"));
+          currentValue = result.toString();
+          display.value = currentValue;
+        } catch {
+          display.value = "Err";
+          currentValue = "";
+        }
+        break;
+
+      default:
+        // Nếu đang là 0 và bấm số khác → thay luôn chứ không nối
+        if (currentValue === "0") currentValue = value;
+        else currentValue += value;
+        display.value = currentValue;
+        break;
+    }
+  });
+});
